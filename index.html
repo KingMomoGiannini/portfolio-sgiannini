@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sebastián Giannini — Portfolio</title>
+  <meta name="description" content="Portfolio de Sebastián Giannini" />
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:title" content="Seba Giannini — Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/000000?v=4" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Sebastián Giannini",
+    "jobTitle":"Desarrollador Java / Analista / QA /Profesor",
+    "url":"https://kingmomogiannini.github.io/",
+    "sameAs":["https://github.com/KingMomoGiannini","https://www.linkedin.com/in/sebasti%C3%A1n-giannini-a11b8a9b/"],
+    "knowsAbout":["Java","Spring Boot","MySQL","Docker","ESP32","Arduino","IoT"]
+  }
+  </script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <span class="dot"></span>
+        <span>Sebastián Giannini</span>
+      </div>
+      <div class="navlinks">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#skills">Skills</a>
+        <a href="#trayectoria">Formación</a>
+        <a href="#contacto">Contacto</a>
+        <button id="toggleTheme" class="btn small secondary" title="Cambiar tema">🌗</button>
+        <a class="btn small" href="#" id="cvLink">Descargar CV</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+    <section class="hero" aria-label="Presentación">
+    <div class="photo">
+        <img id="heroImg" src="./assets/metalKitten.png" alt="Foto de Sebastián Giannini" />
+    </div>
+
+    <div class="intro">
+        <p class="chip">Disponible para oportunidades·</p>
+
+        <h1 class="intro-title">
+        <span class="hi">Hola mundo!</span><br>
+        <span id="typewriter"
+                data-text="Soy Sebastian Giannini, Full Stack Java Developer y les presento mi portfolio."></span>
+        <span class="caret" aria-hidden="true"></span>
+        </h1>
+        <br><br>
+
+        <div class="intro-cta">
+        <a class="btn" href="#proyectos">Ver proyectos</a>
+        <a class="btn secondary" href="https://github.com/KingMomoGiannini" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/sebasti%C3%A1n-giannini-a11b8a9b/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+    </section>
+    <section id="sobre-mi">
+    <h2 >Sobre mí</h2>
+    <div class="card">
+        <p>Hola! Soy Sebastián. Estudiante, apasionado por el desarrollo de software y la tecnología.<br>
+        En mi último rol me desempeñé como <b>Desarrollador Java</b>, realizando tareas de QA, y también como <b>profesor de electrónica</b>.<br>
+        Me recibí de <b>Técnico Superior en Automatización y Robótica</b>, y actualmente continúo en formación en el sector IT y realizando capacitaciones/cursos.<br>
+        Durante mi formación aprendí lenguaje Java, C, Python, MySQL y MongoDB, y en la actualidad sigo profundizando mis conocimientos orientandome al stack de Spring.<br>
+        En mi tiempo libre me gusta salir a pasear, tocar la guitarra, hacer deporte, jugar videojuegos y pasar tiempo de calidad con mis seres queridos.</p>
+    </div>
+    </section>
+    <section id="stack">
+    <h2>Mi Stack</h2>
+    <div class="stack-logos">
+        <div class="stack-item">
+            <img src="./assets/java.png" alt="Java" />
+            <span>Java</span>
+        </div>
+        <div class="stack-item">
+            <img src="./assets/spring.png" alt="Spring Boot" />
+            <span>Spring Boot</span>
+        </div>
+        <div class="stack-item">
+            <img src="./assets/mysql.png" alt="MySQL" />
+            <span>MySQL</span>
+        </div>
+        <div class="stack-item">
+            <img src="./assets/docker.png" alt="Docker" />
+            <span>Docker</span>
+        </div>
+        <div class="stack-item">
+            <img src="./assets/react.png" alt="React" />
+            <span>React</span>
+        </div>
+        <div class="stack-item">
+            <img src="./assets/angular.png" alt="Angular" />
+            <span>Angular</span>
+        </div>
+    </div>
+    </section>
+    <section id="proyectos">
+        <h2>Proyectos destacados</h2>
+        <div class="filters" id="filters"></div>
+        <div class="grid projects" id="projectsGrid" aria-live="polite"></div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill"><b>Backend</b><div>Java · Spring Boot · JPA/Hibernate · REST · Maven · Gradle · C · Python · Node.Js</div></div>
+            <div class="skill"><b>Datos</b><div>MySQL · PostgreSQL · SQL puro · JPA Criteria · MongoDB</div></div>
+            <div class="skill"><b>DevOps</b><div>Docker · GitHub Actions · CI/CD básico</div></div>
+            <div class="skill"><b>Front</b><div>HTML · CSS · JavaScript · TypeScript (básico) · JSP · React (básico)</div></div>
+            <div class="skill"><b>IoT</b><div>ESP32/ESP8266 · Arduino · UART/I2C/SPI · LCD · DHT</div></div>
+            <div class="skill"><b>Docencia</b><div>Guías prácticas · PCB · Soldadura · Sensores · Desarrollo Web</div></div>
+        </div>
+    </section>
+
+    <section id="trayectoria">
+        <h2>Formación</h2>
+        <div class="timeline">
+            <div class="event">
+                <b>Licenciatura en Informatica</b>
+                <div class="meta">En curso</div>
+            </div>
+            <div class="event">
+                <b>Tecnicatura Superior en Automatización y Robótica</b>
+                <div class="meta">2015 - 2017</div>
+            </div>
+            <div class="event">
+                <a href="https://todocodeacademy.com/certificate/spring-boot-poe/"><b>Desarrollo de APIs en Java con Spring Boot</b></a>
+                <div class="meta">2024 - 2025</div>
+            </div>
+            <div class="event">
+                <a href="https://todocodeacademy.com/certificate/m7p/"><b>Microservicios con Spring Cloud</b></a>
+                <div class="meta">Sep. 2025</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="grid" style="grid-template-columns:1.2fr .8fr">
+            <div class="card">
+                <b>Comunicate conmigo:</b>
+                <ul>
+                <li><a href="https://github.com/KingMomoGiannini" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/sebasti%C3%A1n-giannini-a11b8a9b/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a id="emailLink" href="mailto:sebastiangiannini95@gmail.com"><i class="fas fa-envelope"></i> sebastiangiannini95@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        Hecho con HTML, CSS y un poco de JS. © <span id="year"></span> Seba Giannini.
+    </div>
+</footer>
+<script defer src="script.js"></script>
+</body>
+</html>

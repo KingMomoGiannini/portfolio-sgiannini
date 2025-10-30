@@ -1,7 +1,7 @@
 const CONFIG = {
   owner: "Sebastián Giannini",
   email: "sebastiangiannini95@gmail.com",
-  cvUrl: "./Giannini-Sebastian.pdf", // colocá tu archivo en la raíz del repo
+  cvUrl: "./Giannini-Sebastian.pdf", 
   projects: [
     {
       title: "Gestión de reservas (Spring Boot)",

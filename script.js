@@ -23,6 +23,13 @@ const CONFIG = {
       tags: ["Full‑stack","Spring Boot","Java","React.ts"],
       url: "https://github.com/KingMomoGiannini/Hilrelens-Challenge_-Aplicacion-notas",
       image: null
+    },
+    {
+      title: "API de Login",
+      description: "Api de registro y de login que aplica JWT mediante OAuth2. Lista para poder utilizar en arquitectura de microservicios.",
+      tags: ["OAuth2","JWT","Spring Security","PostgreSQL","Full‑stack","Java","TypeScript","React.ts"],
+      url: "https://github.com/KingMomoGiannini/login-api",
+      image: "./assets/registro-login-app.png"
     }
   ]
 }

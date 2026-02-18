@@ -30,6 +30,14 @@ const CONFIG = {
       tags: ["OAuth2","JWT","Spring Security","PostgreSQL","Full‑stack","Java","TypeScript","React.ts"],
       url: "https://github.com/KingMomoGiannini/login-api",
       image: "./assets/registro-login-app.png"
+    },
+    //DOMINation
+    {
+      title: "DOMI-Nation: Migración a Microservicios",
+      description: "Upgrade de gestor de reservas de salas de ensayo, utilizando arquitectura de microservicios, aplicando pruebas unitarias con JUnit y observabilidad con Graphana y Prometheus. ",
+      tags: ["OAuth2","JWT","Spring Security","PostgreSQL","TypeScript","React.ts","Microservicios","Java", "JUnit","Full‑stack"],
+      url: "https://github.com/KingMomoGiannini/DOMINation-full-stack-app",
+      image: "./assets/DOMicroservice.png"
     }
   ]
 }
